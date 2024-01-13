@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#main{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#container{
+    margin-top: 5em;
+}
+.text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    /* display: flex; */
+    text-align: center;
+    justify-content: center;
+}
+h1{
+    text-transform: uppercase;
+    font-size: x-large;
+    /* color: white; */
+  
+}
+h2{
+    font-size: x-large;
+    color: crimson;
+    text-decoration: underline;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    
+}
+
+.btn{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+
+.purple{
+    background-color: palevioletred;
+    border: 5px solid rgb(227, 87, 134);
+}
+
+.red{
+    background-color: crimson;
+    border: 5px solid rgb(176, 8, 41);
+}
+
+.yellow{
+    background-color: goldenrod;
+    border: 5px solid rgb(194, 144, 20);
+}
+
+.blue{
+    background-color: royalblue;
+    border: 5px solid rgb(50, 90, 211);
+}
+
+.left-col{
+    background-color:  rgb(224, 211, 166);
+    padding: 1em 0em;
+    padding-left: 1em;
+    opacity: 70%;
+}
+.right-col{
+    background-color:  rgb(224, 211, 166);
+    padding: 1em 0em;
+    padding-right: 1em;
+    opacity: 70%;
+}
+
+.flash{
+    background-color: white;
+}
+
+.userflash{
+    background-color: rgb(240, 255, 145);
+}
+
+/* add some media querries to make a responsive game  */
+
+@media (max-width: 400px) {
+   
+    .btn{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        margin: 5px;
+        
+    }
+    .text{
+        text-align: center;
+        padding: 0 10px 0 10px;
+        font-size: x-small;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }img{
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 250px) {
+    .btn{
+        height: 80px;
+        width: 80px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .text{
+        font-size: x-small;
+    }
+}
